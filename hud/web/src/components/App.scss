@@ -1,0 +1,102 @@
+:root {
+  --main-color: #6BB83A;
+  --vw-c: 1.0;
+  --vh-c: 1.0;
+}
+
+@keyframes low-blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.3; }
+  100% { opacity: 1; }
+}
+
+.hud-wrapper {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  gap: 1vh;
+
+  -webkit-user-select: none; 
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  &.env-browser {
+    background-image: url("https://i.imgur.com/3pzRj9n.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .statue-wrapper {
+    position: absolute;
+    display: flex;
+
+    left: calc(1.01vw * var(--vw-c));
+    bottom: calc(2.3vh * var(--vh-c));
+
+    width: calc(16.14vw * var(--vw-c));
+    height: calc(3.5vh * var(--vh-c));
+
+    .statue {
+      position: relative;
+      display: flex;
+      align-items: flex-end; 
+      height: 100%;
+      width: calc(3.5vh * var(--vh-c));
+      height: 100%;
+      background: rgba(0, 0, 0, 0.432);
+      overflow: hidden;
+
+      .progress {
+        position: absolute;
+        height: var(--state);
+        width: 100%;
+        background-color: var(--color);
+        transition: width 0.25s ease;
+
+        box-shadow: 0.0vh 0 3vh var(--color);
+        
+      }
+
+      .icon svg {
+        position: absolute;
+        left: calc((3.5vh /2) * var(--vh-c));
+        top: calc((3.5vh /2) * var(--vh-c));
+
+        height: calc(2.1vh * var(--vh-c));
+        width: calc(2.1vh * var(--vh-c));
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .statue[data-type="health"] {
+      flex: 1;
+      width: auto;
+
+      .progress {
+        height: 100%;
+        width: var(--state);
+      }
+    }
+
+    .statue[data-low="true"] .progress {
+      animation: low-blink 0.8s infinite ease-in-out;
+    }
+
+  }
+
+  .speedometer-wrapper {
+    position: absolute;
+    display: flex;
+
+    left: calc(20vw * var(--vw-c));
+    bottom: calc(2.3vh * var(--vh-c));
+
+    width: calc(7vw * var(--vw-c));
+    height: calc(10vh * var(--vh-c));
+  }
+}
+
+
