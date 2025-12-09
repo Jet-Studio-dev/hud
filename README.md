@@ -9,7 +9,6 @@ This HUD focuses on clarity, performance, and easy integration. Perfect for role
 
 - ⚡ **Optimized** for performance  
 - 🎨 **Clean and modern design**  
-- 🔧 Easy to **configure and customize**  
 - 🔑 Supports **ESX**, **QB-Core**, or standalone logic  
 - 📦 Small and modular codebase  
 
@@ -17,7 +16,8 @@ This HUD focuses on clarity, performance, and easy integration. Perfect for role
 
 ## 📸 Preview
 
-> 🖼️ *Add your images or GIF previews here*
+<img width="1918" height="1079" alt="image" src="https://github.com/user-attachments/assets/5d5ccc4c-de65-4a77-b468-2ffb52f7313b" />
+
 
 | Example 1 | Example 2 |
 |----------|-----------|
@@ -32,4 +32,4 @@ This HUD focuses on clarity, performance, and easy integration. Perfect for role
 3. Add the following to your `server.cfg`:
 
 ```cfg
-ensure simple-hud
+ensure hud
