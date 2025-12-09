@@ -1,7 +1,7 @@
 # 🔥 Simple FiveM HUD
 
-A lightweight and modern **Heads-Up Display (HUD)** designed for FiveM servers.  
-This HUD focuses on clarity, performance, and easy integration. Perfect for roleplay servers or minimalist setups that need clean on-screen information without overloading players.
+A lightweight & modern **FiveM HUD** designed to enhance player experience without overwhelming the screen.  
+Clean, minimalistic, and fully customizable — ideal for roleplay servers or any server wanting a polished interface.
 
 ---
 
