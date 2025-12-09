@@ -17,11 +17,7 @@ This HUD focuses on clarity, performance, and easy integration. Perfect for role
 ## 📸 Preview
 
 <img width="1918" height="1079" alt="image" src="https://github.com/user-attachments/assets/5d5ccc4c-de65-4a77-b468-2ffb52f7313b" />
-
-
-| Example 1 | Example 2 |
-|----------|-----------|
-| ![Preview 1](./preview/preview1.png) | ![Preview 2](./preview/preview2.png) |
+<img width="1919" height="1077" alt="image" src="https://github.com/user-attachments/assets/e051d95e-1221-4fb2-867e-9c2144621a59" />
 
 ---
 
